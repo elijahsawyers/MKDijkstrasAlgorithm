@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E79996F922298C850014B069 /* MKDijkstrasAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = E79996F722298C850014B069 /* MKDijkstrasAlgorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E799970122298CD90014B069 /* MKGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79996FF22298CD90014B069 /* MKGraph.swift */; };
 		E799970222298CD90014B069 /* MKDijkstrasAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799970022298CD90014B069 /* MKDijkstrasAlgorithm.swift */; };
 /* End PBXBuildFile section */
 
@@ -16,7 +15,6 @@
 		E79996F422298C850014B069 /* MKDijkstrasAlgorithm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKDijkstrasAlgorithm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79996F722298C850014B069 /* MKDijkstrasAlgorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKDijkstrasAlgorithm.h; sourceTree = "<group>"; };
 		E79996F822298C850014B069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E79996FF22298CD90014B069 /* MKGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKGraph.swift; sourceTree = "<group>"; };
 		E799970022298CD90014B069 /* MKDijkstrasAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKDijkstrasAlgorithm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				E799970022298CD90014B069 /* MKDijkstrasAlgorithm.swift */,
-				E79996FF22298CD90014B069 /* MKGraph.swift */,
 				E79996F722298C850014B069 /* MKDijkstrasAlgorithm.h */,
 				E79996F822298C850014B069 /* Info.plist */,
 			);
@@ -137,7 +134,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E799970122298CD90014B069 /* MKGraph.swift in Sources */,
 				E799970222298CD90014B069 /* MKDijkstrasAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
