@@ -7,18 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E763604D222B2B9C000C57BA /* MKDijkstrasAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763604C222B2B9C000C57BA /* MKDijkstrasAlgorithmTests.swift */; };
+		E763604F222B2B9C000C57BA /* MKDijkstrasAlgorithm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79996F422298C850014B069 /* MKDijkstrasAlgorithm.framework */; };
+		E7636056222B33F1000C57BA /* MKNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7636055222B33F1000C57BA /* MKNodeTests.swift */; };
+		E7636058222B35C2000C57BA /* MKGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7636057222B35C2000C57BA /* MKGraph.swift */; };
 		E79996F922298C850014B069 /* MKDijkstrasAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = E79996F722298C850014B069 /* MKDijkstrasAlgorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E799970222298CD90014B069 /* MKDijkstrasAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799970022298CD90014B069 /* MKDijkstrasAlgorithm.swift */; };
+		E7B7F0D1222B45720005840F /* MKEdgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B7F0D0222B45720005840F /* MKEdgeTests.swift */; };
+		E7B7F0D3222B458A0005840F /* MKWeightedDirectionalGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B7F0D2222B458A0005840F /* MKWeightedDirectionalGraphTests.swift */; };
+		E7B7F0D5222B45FA0005840F /* MKPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B7F0D4222B45FA0005840F /* MKPathTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E7636050222B2B9C000C57BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E79996EB22298C850014B069 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E79996F322298C850014B069;
+			remoteInfo = MKDijkstrasAlgorithm;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		E763604A222B2B9C000C57BA /* MKDijkstrasAlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKDijkstrasAlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E763604C222B2B9C000C57BA /* MKDijkstrasAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKDijkstrasAlgorithmTests.swift; sourceTree = "<group>"; };
+		E763604E222B2B9C000C57BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7636055222B33F1000C57BA /* MKNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKNodeTests.swift; sourceTree = "<group>"; };
+		E7636057222B35C2000C57BA /* MKGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKGraph.swift; sourceTree = "<group>"; };
 		E79996F422298C850014B069 /* MKDijkstrasAlgorithm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKDijkstrasAlgorithm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79996F722298C850014B069 /* MKDijkstrasAlgorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKDijkstrasAlgorithm.h; sourceTree = "<group>"; };
 		E79996F822298C850014B069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E799970022298CD90014B069 /* MKDijkstrasAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKDijkstrasAlgorithm.swift; sourceTree = "<group>"; };
+		E7B7F0D0222B45720005840F /* MKEdgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKEdgeTests.swift; sourceTree = "<group>"; };
+		E7B7F0D2222B458A0005840F /* MKWeightedDirectionalGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKWeightedDirectionalGraphTests.swift; sourceTree = "<group>"; };
+		E7B7F0D4222B45FA0005840F /* MKPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPathTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E7636047222B2B9C000C57BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E763604F222B2B9C000C57BA /* MKDijkstrasAlgorithm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E79996F122298C850014B069 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E763604B222B2B9C000C57BA /* MKDijkstrasAlgorithmTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7636055222B33F1000C57BA /* MKNodeTests.swift */,
+				E7B7F0D0222B45720005840F /* MKEdgeTests.swift */,
+				E7B7F0D2222B458A0005840F /* MKWeightedDirectionalGraphTests.swift */,
+				E7B7F0D4222B45FA0005840F /* MKPathTests.swift */,
+				E763604C222B2B9C000C57BA /* MKDijkstrasAlgorithmTests.swift */,
+				E763604E222B2B9C000C57BA /* Info.plist */,
+			);
+			path = MKDijkstrasAlgorithmTests;
+			sourceTree = "<group>";
+		};
 		E79996EA22298C850014B069 = {
 			isa = PBXGroup;
 			children = (
 				E79996F622298C850014B069 /* MKDijkstrasAlgorithm */,
+				E763604B222B2B9C000C57BA /* MKDijkstrasAlgorithmTests */,
 				E79996F522298C850014B069 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				E79996F422298C850014B069 /* MKDijkstrasAlgorithm.framework */,
+				E763604A222B2B9C000C57BA /* MKDijkstrasAlgorithmTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +96,7 @@
 		E79996F622298C850014B069 /* MKDijkstrasAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				E7636057222B35C2000C57BA /* MKGraph.swift */,
 				E799970022298CD90014B069 /* MKDijkstrasAlgorithm.swift */,
 				E79996F722298C850014B069 /* MKDijkstrasAlgorithm.h */,
 				E79996F822298C850014B069 /* Info.plist */,
@@ -69,6 +118,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		E7636049222B2B9C000C57BA /* MKDijkstrasAlgorithmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7636054222B2B9C000C57BA /* Build configuration list for PBXNativeTarget "MKDijkstrasAlgorithmTests" */;
+			buildPhases = (
+				E7636046222B2B9C000C57BA /* Sources */,
+				E7636047222B2B9C000C57BA /* Frameworks */,
+				E7636048222B2B9C000C57BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7636051222B2B9C000C57BA /* PBXTargetDependency */,
+			);
+			name = MKDijkstrasAlgorithmTests;
+			productName = MKDijkstrasAlgorithmTests;
+			productReference = E763604A222B2B9C000C57BA /* MKDijkstrasAlgorithmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E79996F322298C850014B069 /* MKDijkstrasAlgorithm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E79996FC22298C850014B069 /* Build configuration list for PBXNativeTarget "MKDijkstrasAlgorithm" */;
@@ -93,9 +160,13 @@
 		E79996EB22298C850014B069 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Elijah Sawyers";
 				TargetAttributes = {
+					E7636049222B2B9C000C57BA = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					E79996F322298C850014B069 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -115,11 +186,19 @@
 			projectRoot = "";
 			targets = (
 				E79996F322298C850014B069 /* MKDijkstrasAlgorithm */,
+				E7636049222B2B9C000C57BA /* MKDijkstrasAlgorithmTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E7636048222B2B9C000C57BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E79996F222298C850014B069 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,17 +209,74 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E7636046222B2B9C000C57BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B7F0D5222B45FA0005840F /* MKPathTests.swift in Sources */,
+				E7B7F0D1222B45720005840F /* MKEdgeTests.swift in Sources */,
+				E7B7F0D3222B458A0005840F /* MKWeightedDirectionalGraphTests.swift in Sources */,
+				E7636056222B33F1000C57BA /* MKNodeTests.swift in Sources */,
+				E763604D222B2B9C000C57BA /* MKDijkstrasAlgorithmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E79996F022298C850014B069 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7636058222B35C2000C57BA /* MKGraph.swift in Sources */,
 				E799970222298CD90014B069 /* MKDijkstrasAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E7636051222B2B9C000C57BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E79996F322298C850014B069 /* MKDijkstrasAlgorithm */;
+			targetProxy = E7636050222B2B9C000C57BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		E7636052222B2B9C000C57BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YP79VTY7S5;
+				INFOPLIST_FILE = MKDijkstrasAlgorithmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ejsawyers.MKDijkstrasAlgorithmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7636053222B2B9C000C57BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YP79VTY7S5;
+				INFOPLIST_FILE = MKDijkstrasAlgorithmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ejsawyers.MKDijkstrasAlgorithmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E79996FA22298C850014B069 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -274,6 +410,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = MKDijkstrasAlgorithm/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,6 +438,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = MKDijkstrasAlgorithm/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,6 +457,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E7636054222B2B9C000C57BA /* Build configuration list for PBXNativeTarget "MKDijkstrasAlgorithmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7636052222B2B9C000C57BA /* Debug */,
+				E7636053222B2B9C000C57BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E79996EE22298C850014B069 /* Build configuration list for PBXProject "MKDijkstrasAlgorithm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
