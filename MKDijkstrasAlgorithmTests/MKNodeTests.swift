@@ -39,6 +39,7 @@ class MKNodeTests: XCTestCase {
         
         // 2. When.
         nodeUnderTest.add(edge: edge)
+        nodeUnderTest.add(edge: edge)
         
         // 3. Then.
         XCTAssertEqual(nodeUnderTest.edgeCount(), 1, "Incorrect number of edges.")
@@ -64,6 +65,7 @@ class MKNodeTests: XCTestCase {
         let destinationNode = MKNode(name: "Test Node 2", x: 200.0, y: 200.0)
         
         // 2. When.
+        nodeUnderTest.addEdgeTo(destination: destinationNode)
         nodeUnderTest.addEdgeTo(destination: destinationNode)
         
         // 3. Then.
@@ -106,6 +108,7 @@ class MKNodeTests: XCTestCase {
         XCTAssertTrue(nodeUnderTest.edgeForDestination(name: "Test Node 2")!.destination === destinationNode, "Edge wasn't found.")
     }
 
+    /// Insures that the proper number of edges is returned.
     func testEdgeCount() {
         // 1. Given.
         let node2 = MKNode(name: "Test Node 2", x: 200.0, y: 200.0)

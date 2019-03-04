@@ -59,10 +59,12 @@ public class MKNode {
     /**
         Adds an edge to another node.
         - note: If the edge's source isn't this node, it will not be added.
+        - note: If there's already an edge to the destination node, it won't be duplicated.
         - parameter edge: The MKEdge to add to the node.
      */
     public func add(edge: MKEdge) {
         if edge.source === self {
+            removeEdgeFrom(destination: edge.destination)
             _edgesToAdjacentNodes.append(edge)
         }
     }
@@ -77,9 +79,11 @@ public class MKNode {
     
     /**
         Adds an edge to another node.
+        - note: If there's already an edge to the destination node, it won't be duplicated.
         - parameter destination: The destination node of the edge.
      */
     public func addEdgeTo(destination: MKNode) {
+        removeEdgeFrom(destination: destination)
         _edgesToAdjacentNodes.append(MKEdge(source: self, destination: destination))
     }
     
@@ -226,10 +230,11 @@ public class MKWeightedDirectionalGraph {
     
     /**
         Adds an edge to an existing node in the graph.
-        - note: The edge will be disgarded if the source node doesn't exist in the graph.
+        - note: The edge will be disgarded if the source and destination node don't exist in the graph.
         - parameter edge: The MKEdge to add to the graph.
      */
     public func add(edge: MKEdge) {
+        if getNodeWith(name: edge.destination.name) == nil { return }
         for node in _nodes {
             if node === edge.source {
                 node.add(edge: edge)
@@ -238,12 +243,40 @@ public class MKWeightedDirectionalGraph {
     }
     
     /**
+         Adds an edge to an existing node in the graph.
+         - note: The edge will be disgarded if the source and destination node don't exist in the graph.
+         - parameter from: The source node's name.
+         - parameter to: The destination node's name.
+     */
+    public func addEdge(from source: String, to destination: String) {
+        if getNodeWith(name: destination) == nil { return }
+        for node in _nodes {
+            if node.name == source {
+                node.addEdgeTo(destination: getNodeWith(name: destination)!)
+            }
+        }
+    }
+    
+    /**
         Removes an edge from the graph, if it exists.
-        - parameter edge: The MKEdge to add to the graph.
+        - parameter edge: The MKEdge to remove from the graph.
      */
     public func remove(edge: MKEdge) {
         for node in _nodes {
             node.remove(edge: edge)
+        }
+    }
+    
+    /**
+        Removes an edge from the graph, if it exists.
+        - parameter from: The source node of the edge.
+        - parameter to: The destination node of the edge.
+     */
+    public func removeEdge(from source: String, to destination: String) {
+        for node in _nodes {
+            if node.name == source {
+                node.removeEdgeFrom(destination: getNodeWith(name: destination)!)
+            }
         }
     }
     

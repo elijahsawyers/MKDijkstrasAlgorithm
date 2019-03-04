@@ -60,6 +60,25 @@ public class MKPath {
         self._previousPath = previousPath
         self._node = node
     }
+    
+    /**
+        Traverses all previous paths and adds an MKPolyline with all of the MKNodes' coordinates to the passed MKMapView.
+        - note: You must handle the creation of the MKPolylineRenderer.
+        - parameter mapView: The MKMapView that you want to add the polyline to.
+     */
+    public func draw(mapView: MKMapView) {
+        var points: [CLLocationCoordinate2D] = []
+        
+        var tempPath: MKPath? = self
+        
+        while tempPath != nil {
+            points.append(tempPath!.node.coordinates.coordinate)
+            tempPath = tempPath?.previousPath
+        }
+        
+        let pathLine = MKPolyline(coordinates: &points, count: points.count)
+        mapView.addOverlay(pathLine)
+    }
 }
 
 /**
@@ -100,7 +119,6 @@ public class MKDijkstrasAlgorithm {
         self.paths = []
         self.visitedNodes = []
     }
-    
     
     /**
         This method executes Dijkstra's algorithm on the graph set at initialization.
