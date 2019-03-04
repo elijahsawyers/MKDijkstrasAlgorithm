@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7043946222CAF4E00301EB9 /* MKDijkstrasAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799970022298CD90014B069 /* MKDijkstrasAlgorithm.swift */; };
 		E763604D222B2B9C000C57BA /* MKDijkstrasAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E763604C222B2B9C000C57BA /* MKDijkstrasAlgorithmTests.swift */; };
 		E763604F222B2B9C000C57BA /* MKDijkstrasAlgorithm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79996F422298C850014B069 /* MKDijkstrasAlgorithm.framework */; };
-		E7636056222B33F1000C57BA /* MKNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7636055222B33F1000C57BA /* MKNodeTests.swift */; };
 		E7636058222B35C2000C57BA /* MKGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7636057222B35C2000C57BA /* MKGraph.swift */; };
 		E79996F922298C850014B069 /* MKDijkstrasAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = E79996F722298C850014B069 /* MKDijkstrasAlgorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E799970222298CD90014B069 /* MKDijkstrasAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799970022298CD90014B069 /* MKDijkstrasAlgorithm.swift */; };
 		E7B7F0D1222B45720005840F /* MKEdgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B7F0D0222B45720005840F /* MKEdgeTests.swift */; };
 		E7B7F0D3222B458A0005840F /* MKWeightedDirectionalGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B7F0D2222B458A0005840F /* MKWeightedDirectionalGraphTests.swift */; };
 		E7B7F0D5222B45FA0005840F /* MKPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B7F0D4222B45FA0005840F /* MKPathTests.swift */; };
@@ -216,7 +215,6 @@
 				E7B7F0D5222B45FA0005840F /* MKPathTests.swift in Sources */,
 				E7B7F0D1222B45720005840F /* MKEdgeTests.swift in Sources */,
 				E7B7F0D3222B458A0005840F /* MKWeightedDirectionalGraphTests.swift in Sources */,
-				E7636056222B33F1000C57BA /* MKNodeTests.swift in Sources */,
 				E763604D222B2B9C000C57BA /* MKDijkstrasAlgorithmTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,7 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7636058222B35C2000C57BA /* MKGraph.swift in Sources */,
-				E799970222298CD90014B069 /* MKDijkstrasAlgorithm.swift in Sources */,
+				E7043946222CAF4E00301EB9 /* MKDijkstrasAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

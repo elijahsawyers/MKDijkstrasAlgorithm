@@ -60,6 +60,7 @@ public class MKNode {
         Adds an edge to another node.
         - note: If the edge's source isn't this node, it will not be added.
         - note: If there's already an edge to the destination node, it won't be duplicated.
+        - note: If you add an edge to a destination node that doesn't exist in the graph, it will cause unwanted behavior.
         - parameter edge: The MKEdge to add to the node.
      */
     public func add(edge: MKEdge) {
@@ -80,6 +81,7 @@ public class MKNode {
     /**
         Adds an edge to another node.
         - note: If there's already an edge to the destination node, it won't be duplicated.
+        - note: If you add an edge to a destination node that doesn't exist in the graph, it will cause unwanted behavior.
         - parameter destination: The destination node of the edge.
      */
     public func addEdgeTo(destination: MKNode) {
