@@ -24,7 +24,7 @@ public class MKNode {
     }
     
     /// The Mercator coordinates of the node.
-    public let _coordinates: MKMapPoint
+    private let _coordinates: MKMapPoint
     
     /// Gets the node's Mercator coordinates.
     public var coordinates: MKMapPoint {
@@ -182,7 +182,7 @@ public class MKWeightedDirectionalGraph {
     public init() {}
     
     /// All nodes currently in the graph.
-    fileprivate var _nodes: [MKNode] = []
+    private var _nodes: [MKNode] = []
     
     public var nodes: [MKNode] {
         get {

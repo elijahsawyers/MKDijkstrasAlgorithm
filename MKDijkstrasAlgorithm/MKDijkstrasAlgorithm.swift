@@ -66,7 +66,7 @@ public class MKPath {
         - note: You must handle the creation of the MKPolylineRenderer.
         - parameter mapView: The MKMapView that you want to add the polyline to.
      */
-    public func draw(mapView: MKMapView) {
+    public func addPolylineOverlay(to mapView: MKMapView) {
         var points: [CLLocationCoordinate2D] = []
         
         var tempPath: MKPath? = self
