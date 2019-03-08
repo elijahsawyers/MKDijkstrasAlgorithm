@@ -1,10 +1,7 @@
-//
-//  MKDijkstrasAlgorithm.h
-//  MKDijkstrasAlgorithm
-//
-//  Created by Elijah Sawyers on 3/1/19.
-//  Copyright © 2019 Elijah Sawyers. All rights reserved.
-//
+/*
+    Created by Elijah Sawyers on 2/27/19.
+    Copyright © 2019 Elijah Sawyers. All rights reserved.
+ */
 
 #import <UIKit/UIKit.h>
 

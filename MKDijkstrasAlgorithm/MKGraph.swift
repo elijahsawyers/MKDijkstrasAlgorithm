@@ -1,10 +1,10 @@
-//
-//  MKGraph.swift
-//  MKDijkstrasAlgorithm
-//
-//  Created by Elijah Sawyers on 3/2/19.
-//  Copyright © 2019 Elijah Sawyers. All rights reserved.
-//
+/*
+    Created by Elijah Sawyers on 03/02/19.
+    Copyright © 2019 Elijah Sawyers. All rights reserved.
+ 
+    Abstract:
+    This file contains the necessary classes to build a MapKit graph.
+ */
 
 import Foundation
 import MapKit
