@@ -162,9 +162,12 @@ public class MKDijkstrasAlgorithm {
                 return shortestPath
             }
             
-            // 4. Otherwise, add the node to the visited set, and append unvisited adjacent nodes into the queue of paths.
+            // 4. Add the node to the visited nodes.
+            visitedNodes.append(shortestPath.node)
+            
+            // 5. Append unvisited adjacent nodes into the queue of paths.
             for edge in shortestPath.node.edgesToAdjacentNodes {
-                let visitedAdjacentNode = visitedNodes.contains { $0 === shortestPath.node }
+                let visitedAdjacentNode = visitedNodes.contains { $0 === edge.destination }
                 if !visitedAdjacentNode {
                     paths.append(MKPath(edge: edge, previousPath: shortestPath, node: edge.destination))
                 }
